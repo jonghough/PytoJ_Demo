@@ -6,6 +6,7 @@ return values.
 This is entirely based on the method here:
 http://www.jsoftware.com/pipermail/programming/2013-November/033974.html 
 '''
+LIB = "../libj.so"
 cmd = "cmd"
 
 def mulall(arr):    
@@ -48,7 +49,7 @@ def resize(shap,dat):
 		shd=dat    
 	return shd
 
-LIB= "/home/jon/Documents/pyscripts/pyjdll/libj.so"
+
 
 cdll.LoadLibrary(LIB)
 j = CDLL(LIB)
